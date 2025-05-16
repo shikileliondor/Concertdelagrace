@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos - Concert de la Grâce</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- En-tête -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Concert de la Grâce</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-500">Accueil</a>
+        <a href="propos.html" class="text-gray-700 hover:text-indigo-500">A propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Bannière -->
+  <section class="mt-8 max-w-5xl mx-auto px-4">
+    <img src="4.jpeg" alt="Bannière À propos" class="w-full rounded-lg shadow-md" />
+  </section>
+
+  <!-- À propos -->
+  <section class="py-12 max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">À propos de Fours Event</h2>
+    <p class="text-lg leading-relaxed text-gray-800 mb-6">
+      <strong>Fours Event</strong> est une structure événementielle innovante, conçue par des jeunes passionnés par la musique gospel et la foi chrétienne. 
+      Notre mission est de promouvoir le message de l’Évangile à travers des concerts d’exception, où la louange et l’adoration se rencontrent dans une atmosphère de joie et d’inspiration.
+    </p>
+    <p class="text-lg leading-relaxed text-gray-800">
+      Grâce à une équipe jeune, dynamique et engagée, Fours Event met en œuvre des projets culturels et spirituels qui rassemblent les communautés autour de valeurs fortes : l’amour, l’unité et l’excellence. 
+      Chaque événement est une opportunité de vivre une expérience unique, portée par le talent, l’organisation et la ferveur de la jeunesse chrétienne.
+    </p>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-white border-t py-6 mt-12 text-center text-gray-500">
+    <span id="footerText">© 2025 Concert Gospel Live. Tous droits réservés.</span>
+  </footer>
+
+  <!-- JS pour année dynamique -->
+  <script>
+    const annee = new Date().getFullYear();
+    document.getElementById("footerText").textContent = `© ${annee} Concert Gospel Live. Tous droits réservés.`;
+  </script>
+
+</body>
+</html>
